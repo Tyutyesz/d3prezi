@@ -25,9 +25,9 @@ var svg = d3.select(".svg-place").append("svg")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("../../data.csv", type, function(error, data) {
+d3.csv("../../databar.csv", type, function(error, data) {
     if (error) throw error;
-
+    console.log(error);
     x.domain(data.map(function(d) { return d.letter; }));
     y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
 
