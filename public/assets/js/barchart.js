@@ -25,7 +25,7 @@ var svg = d3.select(".svg-place").append("svg")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("../../data.tsv", type, function(error, data) {
+d3.csv("../../data.csv", type, function(error, data) {
     if (error) throw error;
 
     x.domain(data.map(function(d) { return d.letter; }));
