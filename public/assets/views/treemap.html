@@ -22,13 +22,13 @@
             <li>
                 <a href="../../index.html">Barchart</a>
             </li>
-            <li class="active">
+            <li>
                 <a href="choropleth.html">Coropleth</a>
             </li>
             <li>
                 <a href="calendar.html">Calendar</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="treemap.html">Treemap</a>
             </li>
         </ul>
@@ -36,7 +36,15 @@
     <div class="well">
         <div class="row">
             <div class="col-sm-12">
-                <h3>Choropleth</h3>
+                <h3>Treemap</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <form>
+                    <label><input type="radio" name="mode" value="size" checked> Méret </label>
+                    <label><input type="radio" name="mode" value="count"> Darabszám </label>
+                </form>
             </div>
         </div>
         <div class="svg-place">
@@ -45,6 +53,6 @@
     </div>
 </div>
 
-<script src="../js/choropleth.js"></script>
+<script src="../js/treemap.js"></script>
 </body>
 </html>

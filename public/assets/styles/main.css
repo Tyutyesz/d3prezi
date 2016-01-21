@@ -9,6 +9,12 @@ body{
 }
 .svg-place, .svg-place-second{
     width: 100%;
+
+
+}
+
+.svg-place{
+    border: 1px solid #222222;
 }
 .bar:hover {
     fill: brown;
@@ -108,4 +114,15 @@ text    {
     background-color: #fff;
     border: 2px solid #ccc;
     padding: 10px;
+}
+
+/*Treemap*/
+
+.node {
+    border: solid 1px white;
+    font: 10px sans-serif;
+    line-height: 12px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 2px;
 }
